@@ -1,0 +1,21 @@
+.A{
+    font-family:'Times New Roman', Times, serif;
+    font-size: large;
+    text-align: center;
+    border-radius:20%;
+    padding: 100px;
+    width: 100px;
+    height: 100px;
+    background-color: blueviolet;
+    position: relative;
+    animation-name:Demo;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+}
+@keyframes Demo {
+    0%{background-color: blueviolet; left:0px; top:0px; transform:rotate(0deg);}
+    25%{background-color: rgb(34, 11, 54); left:700px; top:0px; transform:rotate(90deg);}
+    50%{background-color: rgb(9, 8, 10); left:350px; top:200px; transform:rotate(180deg);}
+    75%{background-color: rgb(171, 166, 175); left:350px; top:200px; transform:rotate(270deg);}    
+    100%{background-color: blueviolet; left:0px; top:0px; transform:rotate(360deg);}
+}

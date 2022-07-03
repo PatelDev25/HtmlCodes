@@ -1,0 +1,84 @@
+div
+{
+    height:200px;
+    width:200px;
+    transition:3s;
+    font-size:25px;
+    font-weight:bold;
+    color:#000000;
+    background-color:rgb(92, 65, 97);
+}
+
+#TranslateDiv:hover
+{
+    -webkit-transform:translate(100px,100px);
+       -moz-transform:translate(100px,100px);
+        -ms-transform:translate(100px,100px);
+         -o-transform:translate(100px,100px);
+            transform:translate(100px,100px);
+          background-color:rgb(127, 133, 107);
+          color:rgba(76, 174, 187, 0.699); 
+}
+
+#RotateDiv:hover
+{
+    -webkit-transform:rotate(360deg);
+       -moz-transform:rotate(360deg);
+        -ms-transform:rotate(360deg);
+         -o-transform:rotate(360deg);
+            transform:rotate(360deg);
+          background-color:rgb(127, 133, 107);
+          color:rgba(76, 174, 187, 0.699); 
+
+}
+#RotateDiv3D:hover{
+    -webkit-transform:rotate3d(1,1,0,360deg);
+       -moz-transform:rotate3d(1,1,0,360deg);
+        -ms-transform:rotate3d(1,1,0,360deg);
+         -o-transform:rotate3d(1,1,0,360deg);
+            transform:rotate3d(1,1,0,360deg);
+          background-color:rgb(127, 133, 107);
+          color:rgba(76, 174, 187, 0.699); 
+
+}
+#SkewDiv:hover
+{
+    -webkit-transform:skew(45deg);
+       -moz-transform:skew(45deg);
+        -ms-transform:skew(45deg);
+         -o-transform:skew(45deg);
+            transform:skew(45deg);
+          background-color:rgb(127, 133, 107);
+          color:rgba(76, 174, 187, 0.699); 
+}
+#ScaleDiv:hover
+{
+    -webkit-transform:scale(1.5,0.5);
+       -moz-transform:scale(1.5,0.5);
+        -ms-transform:scale(1.5,0.5);
+         -o-transform:scale(1.5,0.5);
+            transform:scale(1.5,0.5);
+          background-color:rgb(127, 133, 107);
+          color:rgba(76, 174, 187, 0.699); 
+}
+#OpacityDiv:hover
+{
+    opacity:0;
+}
+#RGBADiv:hover
+{
+    background:rgba(128,128,0,0.5);
+}
+#BoxShadowDiv:hover
+{
+    box-shadow:0px 0px 30px rgb(23, 24, 20);;
+}
+#TextShadowDiv:hover
+{
+    text-shadow:3px 3px 3px white;
+}
+#BorderRadiusDiv:hover
+{
+    border-radius:50%;
+}
+#OverFlowDiv{overflow:auto;}
