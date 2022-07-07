@@ -1,0 +1,155 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title>Layout5</title>
+    <style>
+        * {
+            font-size: 22px;
+            font-weight: bold;
+        }
+
+        #R1 {
+            height: 30px;
+            padding-top: 10px;
+            background-color: aquamarine;
+            width: 98%;
+            padding-left: 2%;
+            margin-bottom: 15px; 
+        }
+            #R1 div {
+                float: left;
+                height: 40px;
+                padding-bottom: 10px;   
+            }
+
+        #R1C1 {
+            width: 30%;
+            padding-left: 2%;
+            text-align: start;
+        }
+
+        #R1C2 {
+            text-align:center;
+            width: 30%;
+            text-align: center;
+        }
+        #R1C3{
+            width:30%;
+            text-align:right;
+            padding-right:2%;
+        }
+       
+        #R2 {
+            margin-bottom: 10px;
+            height: 600px;
+            text-align:center;
+        }
+        #R2C1,#R2C2,#R2C3{
+            float:left;
+            height:600px;
+        }
+            
+        #R2C1 {
+            background-color:coral;
+            width: 32%;
+            margin-right: 2%;
+        }
+       
+        #R2C2 {
+            width: 32%;
+            margin-right: 2%;
+        }
+        #R2C2R1 {
+           background-color:darkcyan;
+            height: 300px;
+            width: 100%;
+            margin-bottom: 5px;
+            text-align:center;
+           
+        }
+        #R2C2R2 {
+            background-color:cornflowerblue;
+            height: 300px;
+            width: 100%;    
+            text-align:center;
+        }
+        #R2C3 {
+            background-color: coral;
+            width: 32%;
+        }
+        #R3 {
+            height: 30px;
+            padding-top: 10px;        
+            width: 100%;
+            margin-bottom: 15px;
+        }
+        #R3 div {
+            float: left;
+            height: 30px;
+            padding-bottom: 10px;
+            text-align: center;
+        }
+        #R3C1 {
+            background-color:aquamarine;
+            width: 32%;
+            margin-right:2%;
+        }
+
+        #R3C2 {
+            width: 66%;
+            text-align: right;
+            background-color: cadetblue;
+           
+        }
+
+        #R5 {
+            background-color: dimgray;
+            height: 35px;
+            width: 100%;
+            margin-bottom: 10px;
+            padding-top: 15px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <div id="R1">
+            <div id="R1C1">
+                Home
+            </div>
+            <div id="R1C2">
+                Menu
+            </div>
+            <div id="R1C3">
+                Help
+            </div>
+        </div>
+        <div id="R2">
+            <div id="R2C1">
+                1
+            </div>
+            <div id="R2C2">
+                <div id="R2C2R1">2
+                </div>
+                <div id="R2C2R2">3
+                </div>
+            </div>
+            <div id="R2C3">
+                4
+            </div>
+        </div>
+        <div id="R3">
+            <div id="R3C1">
+                5
+            </div>
+            <div id="R3C2">
+              6
+            </div>
+        </div>
+        <div id="R5">Footer</div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,370 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title>CSS</title>
+        <style>
+            h1 {
+                color: blue;
+                font-family: verdana;
+                font-size: 300%;
+            }
+
+            p {
+                color: red;
+                font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+                font-size: 160%;
+                border: 2px solid powderblue;
+                padding: 30px;
+            }
+                p.dotted {
+                    outline-style: dotted;
+                }
+
+                p.dashed {
+                    outline-style: dashed;
+                }
+
+                p.solid {
+                    outline-style: solid;
+                }
+
+                p.double {
+                    outline-style: double;
+                }
+
+                p.groove {
+                    outline-style: groove;
+                }
+
+                p.ridge {
+                    outline-style: ridge;
+                }
+
+                p.inset {
+                    outline-style: inset;
+                }
+
+                p.outset {
+                    outline-style: outset;
+                }
+            h11 {
+                font-family: "Times New Roman", Times, serif;
+                text-decoration: overline;
+            }
+
+            h22 {
+                text-decoration: line-through;
+                text-shadow: 2px 2px 5px red;
+            }
+
+            h33 {
+                text-decoration: underline;
+                text-shadow: 2px 2px;
+            }
+
+            p.ex {
+                font-family: "Times New Roman", Times, serif;
+                text-decoration: overline underline;
+            }
+            ul.a {
+                list-style-type: circle;
+            }
+
+            ul.b {
+                list-style-type: square;
+            }
+
+            ol.c {
+                list-style-type: upper-roman;
+            }
+
+            ol.d {
+                list-style-type: lower-alpha;
+            }
+            ul {
+                list-style: square inside url("sqpurple.gif");
+            }
+            table, th, td {
+                border: 1px solid;
+            }
+
+            table {
+                width: 100%;
+            }
+            table1 {
+                border-collapse: collapse;
+                width: 100%;
+            }
+
+            th1, td1 {
+                text-align: left;
+                padding: 8px;
+            }
+            tr:hover {
+                background-color: coral;
+            }
+            #overflowTest {
+                background-color:darksalmon;
+                color: white;
+                padding: 15px;
+                width: 70%;
+                height: 100px;
+                overflow: scroll;
+                border: 1px solid #ccc;
+            }
+            div1 {
+                background-color: coral;
+                width: 200px;
+                height: 65px;
+                border: 1px solid;
+                overflow: visible;
+            }
+            img {
+                float: right;
+
+            }
+            img1 {
+                opacity: 0.5;
+                opacity: 1.0;
+            }
+            img1:hover {
+                opacity: 1.0;
+            }
+            span.a {
+                display: inline; /* the default for span */
+                width: 100px;
+                height: 100px;
+                padding: 5px;
+                border: 1px solid blue;
+                background-color: yellow;
+            }
+            .center {
+                text-align: center;
+                border: 3px solid green;
+            }
+            div > p {
+                background-color: yellow;
+            }
+            div2:hover {
+                background-color: blue;
+            }
+            div2 {
+                background-color: green;
+                color: white;
+                padding: 25px;
+                text-align: center;
+            }
+            .dropbtn {
+                background-color: #4CAF50;
+                color: white;
+                padding: 16px;
+                font-size: 16px;
+                border: none;
+                cursor: pointer;
+            }
+
+            .dropdown {
+                position: relative;
+                display: inline-block;
+            }
+
+            .dropdown-content {
+                display: none;
+                position: absolute;
+                background-color: #f9f9f9;
+                min-width: 160px;
+                box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+                z-index: 1;
+            }
+
+                .dropdown-content a {
+                    color: black;
+                    padding: 12px 16px;
+                    text-decoration: none;
+                    display: block;
+                }
+
+                    .dropdown-content a:hover {
+                        background-color: #f1f1f1
+                    }
+
+            .dropdown:hover .dropdown-content {
+                display: block;
+            }
+
+            .dropdown:hover .dropbtn {
+                background-color: #3e8e41;
+            }
+        </style>
+    
+</head>
+<body>
+    <h1>This is a heading</h1>
+    <p>This is a paragraph.</p>
+    <h1>This is a heading</h1>
+    <p>This is a paragraph. lorem The CSS margin property defines a margin (space) outside the border. </p>
+    <link rel="stylesheet" href="https://www.w3schools.com/html/styles.css">
+    <a href="url">link text</a><br>
+    <a href="https://www.w3schools.com/" target="_blank">Visit W3Schools!</a><br>
+    <img src="C:\Users\Student\Pictures\Screenshots\Screenshot (1).png" alt="Italian Trulli"><br>
+    <img src="https://www.w3schools.com/images/w3schools_green.jpg" alt="W3Schools.com">
+    <br />
+    <p class="dotted">A dotted outline</p>
+    <p class="dashed">A dashed outline</p>
+    <p class="solid">A solid outline</p>
+    <p class="double">A double outline</p>
+    <p class="groove">A groove outline. The effect depends on the outline-color value.</p>
+    <p class="ridge">A ridge outline. The effect depends on the outline-color value.</p>
+    <p class="inset">An inset outline. The effect depends on the outline-color value.</p>
+    <p class="outset">An outset outline. The effect depends on the outline-color value.</p><br>
+    <h11>Overline text decoration</h11><br>
+    <h22>Line-through text decoration</h22><br>
+    <h33>Underline text decoration</h33><br>
+    <p class="ex">Overline and underline text decoration.</p><br>
+
+    <p>Example of unordered lists:</p>
+    <ul class="a">
+        <li>Coffee</li>
+        <li>Tea</li>
+        <li>Coca Cola</li>
+    </ul>
+
+    <ul class="b">
+        <li>Coffee</li>
+        <li>Tea</li>
+        <li>Coca Cola</li>
+    </ul>
+
+    <p>Example of ordered lists:</p>
+    <ol class="c">
+        <li>Coffee</li>
+        <li>Tea</li>
+        <li>Coca Cola</li>
+    </ol>
+
+    <ol class="d">
+        <li>Coffee</li>
+        <li>Tea</li>
+        <li>Coca Cola</li>
+    </ol>
+    <ul>
+        <li>Coffee</li>
+        <li>Tea</li>
+        <li>Coca Cola</li>
+    </ul>
+
+    <table>
+        <tr>
+            <th>Firstname</th>
+            <th>Lastname</th>
+        </tr>
+        <tr>
+            <td>Peter</td>
+            <td>Griffin</td>
+        </tr>
+        <tr>
+            <td>Lois</td>
+            <td>Griffin</td>
+        </tr>
+    </table>
+
+    <div style="overflow-x: auto;">
+        <table1>
+            <tr>
+                <th1>First Name</th1>
+                <th1>Last Name</th1>
+                <th1>Points</th1>
+                <th1>Points</th1>
+                <th1>Points</th1>
+                <th1>Points</th1>
+                <th1>Points</th1>
+                <th1>Points</th1>
+                <th1>Points</th1>
+                <th1>Points</th1>
+                <th1>Points</th1>
+                <th1>Points</th1>
+            </tr>
+            <tr>
+                <td1>Jill</td1>
+                <td1>Smith</td1>
+                <td1>50</td1>
+                <td1>50</td1>
+                <td1>50</td1>
+                <td1>50</td1>
+                <td1>50</td1>
+                <td1>50</td1>
+                <td1>50</td1>
+                <td1>50</td1>
+                <td1>50</td1>
+                <td1>50</td1>
+            </tr>
+            <tr>
+                <td1>Eve</td1>
+                <td1>Jackson</td1>
+                <td1>94</td1>
+                <td1>94</td1>
+                <td1>94</td1>
+                <td1>94</td1>
+                <td1>94</td1>
+                <td1>94</td1>
+                <td1>94</td1>
+                <td1>94</td1>
+                <td1>94</td1>
+                <td1>94</td1>
+            </tr>
+            <tr>
+                <td1>Adam</td1>
+                <td1>Johnson</td1>
+                <td1>67</td1>
+                <td1>67</td1>
+                <td1>67</td1>
+                <td1>67</td1>
+                <td1>67</td1>
+                <td1>67</td1>
+                <td1>67</td1>
+                <td1>67</td1>
+                <td1>67</td1>
+                <td1>67</td1>
+            </tr>
+        </table1>
+    </div>
+    <div id="overflowTest">This text is really long and the height of its container is only 100 pixels. Therefore, a scrollbar is added to help the reader to scroll the content. Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi. Nam liber tempor cum soluta nobis eleifend option congue nihil imperdiet doming id quod mazim placerat facer possim assum. Typi non habent claritatem insitam; est usus legentis in iis qui facit eorum claritatem.</div>
+    <br>   <div1>You can use the overflow property when you want to have better control of the layout. You can use the overflow property when you want to have better control of the layout. The overflow property specifies what happens if content overflows an element's box.The overflow property specifies what happens if content overflows an element's box.</div1>
+    <p>
+        <img src="C:\Users\Student\Pictures\Screenshots\Screenshot (2).png" alt="Pineapple" style="width:170px;height:170px;margin-left:15px;">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus imperdiet, nulla et dictum interdum, nisi lorem egestas odio, vitae scelerisque enim ligula venenatis dolor. Maecenas nisl est, ultrices nec congue eget, auctor vitae massa. Fusce luctus vestibulum augue ut aliquet. Mauris ante ligula, facilisis sed ornare eu, lobortis in odio. Praesent convallis urna a lacus interdum ut hendrerit risus congue. Nunc sagittis dictum nisi, sed ullamcorper ipsum dignissim ac. In at libero sed nunc venenatis imperdiet sed ornare turpis. Donec vitae dui eget tellus gravida venenatis. Integer fringilla congue eros non fermentum. Sed dapibus pulvinar nibh tempor porta. Cras ac leo purus. Mauris quis diam velit.
+    </p>
+    <h2>display: inline</h2>
+    <div>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum consequat scelerisque elit sit amet consequat. Aliquam erat volutpat. <span class="a">Aliquam</span> <span class="a">venenatis</span> gravida nisl sit amet facilisis. Nullam cursus fermentum velit sed laoreet. </div>
+    <h2>Center Text</h2>
+
+    <div class="center">
+        <p>This text is centered.</p>
+    </div>
+    <p>The child selector (>) selects all elements that are the children of a specified element.</p>
+
+    <div>
+        <p>Paragraph 1 in the div.</p>
+        <p>Paragraph 2 in the div.</p>
+        <section>
+            <!-- not Child but Descendant -->
+            <p>Paragraph 3 in the div (inside a section element).</p>
+        </section>
+        <p>Paragraph 4 in the div.</p>
+    </div>
+    <div2>Mouse Over Me</div2>
+    <img id="img1" src="C:\Users\Student\Pictures\Screenshots\Screenshot (2).png" alt="Forest" width="170" height="100">
+    <img id="img1" src="C:\Users\Student\Pictures\Screenshots\Screenshot (3).png" alt="Mountains" width="170" height="100">
+    <img id="img1" src="C:\Users\Student\Pictures\Screenshots\Screenshot (4).png" alt="Italy" width="170" height="100">
+    <div class="dropdown">
+        <button class="dropbtn">Dropdown</button>
+        <div class="dropdown-content">
+            <a href="#">Link 1</a>
+            <a href="#">Link 2</a>
+            <a href="#">Link 3</a>
+        </div>
+    </div>
+</body>
+</html>
