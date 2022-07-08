@@ -1,0 +1,326 @@
+<html>
+    <head>
+        <style>
+            :root {
+    --background: #defff4;
+    --butterfly_mid: #372f23;
+    --butterfly_wings: #771590;
+    --butterfly2: #5c0b2d;
+}
+
+body {
+    overflow: hidden;
+    background: linear-gradient(to bottom, #67bdec, #79bb57);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    height: 100vh;
+}
+
+.container {
+    overflow: hidden;
+    position: relative;
+    justify-content: center;
+    display: flex;
+    margin: auto;
+    width: 10rem;
+    height: 10rem;
+}
+
+
+#yellowGrass1,
+#yellowGrass2,
+#yellowGrass3,
+#yellowGrass4,
+#yellowGrass5,
+#yellowGrass5,
+#yellowGrass6 {
+    width: 0.2em;
+    height: 0.3em;
+    position: absolute;
+    display: block;
+    background: #b1e888;
+    border-radius: 50%;
+    transform: translate(-16000%, 8000%);
+}
+
+#yellowGrass2 {
+    transform: translate(-8000%, 7000%);
+}
+
+#yellowGrass3 {
+    transform: translate(-9500%, 9500%);
+}
+
+#yellowGrass4 {
+    transform: translate(1000%, 10900%);
+}
+
+#yellowGrass5 {
+    transform: translate(12000%, 6800%);
+}
+
+#yellowGrass6 {
+    transform: translate(7000%, 9000%);
+}
+
+.flying {
+    position: relative;
+    display: block;
+    top: 10%;
+    left: 20%;
+    transform-style: preserve-3d;
+    transform: rotateX(50deg) rotateY(30deg) rotateZ(-60deg);
+    width: 100px;
+    height: 100px;
+}
+
+.wingLeft,
+.wingRight {
+    position: absolute;
+    display: block;
+}
+
+.wingLeft {
+    animation: moveLeft 0.4s infinite;
+    animation-direction: alternate;
+}
+
+.wingRight {
+    animation: moveRight 0.4s infinite;
+    animation-direction: alternate;
+}
+
+.fly,
+.fly::after {
+    background: var(--butterfly_wings);
+    transform-origin: 100% 50%;
+    overflow: hidden;
+    position: absolute;
+    display: block;
+    border-radius: 50% 50% 40% 40%;
+    right: 0;
+    top: 0;
+}
+
+.fly:first-child {
+    height: 1.7em;
+    text-align: center;
+    transform: rotateZ(30deg);
+    width: 2.8em;
+}
+
+.fly:last-child {
+    height: 1.3em;
+    transform: rotateZ(-30deg);
+    width: 2.5em;
+}
+
+.flyingPink {
+    position: relative;
+    display: block;
+    top: 10%;
+    left: 20%;
+    transform-style: preserve-3d;
+    transform: rotateX(50deg) rotateY(30deg) rotateZ(-60deg);
+    width: 100px;
+    height: 100px;
+    animation: flyHigh 1s linear infinite;
+}
+
+.flyPink,
+.flyPink::after {
+   
+    background: var(--butterfly2);
+    transform-origin: 100% 50%;
+    position: absolute;
+    display: block;
+    border-radius: 50% 50% 25% 25%;
+    right: 0;
+    top: 0;
+}
+
+.flyPink:first-child {
+    height: 1.7em;
+    text-align: center;
+    transform: rotateZ(30deg);
+    width: 2.8em;
+}
+
+.flyPink:last-child {
+    height: 1em;
+    transform: rotateZ(-30deg);
+    width: 2em;
+}
+
+@keyframes moveLeft {
+    0% {
+        transform: rotateY(-60deg);
+    }
+
+    100% {
+        transform: rotateY(60deg);
+    }
+}
+
+@keyframes moveRight {
+    0% {
+        transform: rotateY(170deg);
+    }
+
+    100% {
+        transform: rotateY(70deg);
+    }
+}
+
+.flying {
+    position: absolute;
+    display: block;
+    animation: flyHigh 5s infinite ease-in-out;
+    transform-origin: 100%;
+}
+
+@keyframes flyHigh {
+    0% {
+        left: -100px;
+        top: 50px;
+    }
+
+    25% {
+        left: -100px;
+        top: 100px;
+    }
+
+    50% {
+        left: -100px;
+        top: 50px;
+    }
+
+    100% {
+        left: -100px;
+        top: 50px;
+    }
+}
+
+
+        </style>
+    </head>
+<body>
+    <script src="./script.js"></script>
+      <div class="container" id="container">
+      <div class="flying" id="butterfly">
+          <div class="wingLeft">
+              <div class="fly"></div>
+              <div class="fly"></div>
+          </div>
+          <div class="wingRight">
+              <div class="fly"></div>
+              <div class="fly"></div>
+          </div>
+      </div>
+      <div class="flyingPink" id="butterflyPink">
+          <div class="wingLeft">
+              <div class="flyPink"></div>
+              <div class="flyPink"></div>
+          </div>
+          <div class="wingRight">
+              <div class="flyPink"></div>
+              <div class="flyPink"></div>
+          </div>
+      </div>
+      <div id="yellowGrass1"></div>
+      <div id="yellowGrass2"></div>
+      <div id="yellowGrass3"></div>
+      <div id="yellowGrass4"></div>
+      <div id="yellowGrass5"></div>
+      <div id="yellowGrass6"></div>
+  </div>
+  <footer>
+  <!-- <div>
+    <a href="file:///G:/Html_Codes/Samples/Home_Page/SampleWebsite.html">Home</a> 
+    </div> -->
+    </footer>
+  <script>
+    // Poonam Soni - All rights reserved
+
+// Copyright © 2022 Poonam Soni
+
+var maxTime = 50;
+var maxTimePink = 40;
+var butterflies = document.getElementsByTagName("body")[0];
+var singleButterfly = document.getElementById("butterfly");
+var pinkButterfly = document.getElementById("butterflyPink");
+var w = window;
+var d = document;
+var e = d.documentElement;
+var g = d.getElementsByTagName("body")[0];
+var width = w.innerWidth || e.clientWidth || g.clientWidth;
+var height = w.innerHeight || e.clientHeight || g.clientHeight;
+var initialTop = butterflies.clientHeight * -1;
+var butterflyCount = 300;
+var pinkButterflyCount = 200;
+
+for (var i = 0; i < butterflyCount; i++) {
+  var ypos = Math.round(Math.random() * height);
+
+  var createButterfly = document.createElement("div");
+  createButterfly.innerHTML = singleButterfly.outerHTML;
+
+  var speed = 1400 * (Math.random(100, 200) * maxTime + 1);
+  createButterfly.setAttribute("class", "createbutterfly" + (3 - Math.floor(speed / 1000 / 8)));
+
+  var speedDelay = 34000;
+
+  butterflies.appendChild(createButterfly);
+  createButterfly.animate(
+    [
+      {
+        transform: "translate3d(" + width + "vw, " + initialTop + "vh, 0)"
+      },
+      {
+        transform:
+          "translate3d(-" + Math.random() * 256 + "vw, " + ypos + "vh, 0)"
+      }
+    ],
+    {
+      delay: Math.random() * -speed,
+      duration: speedDelay,
+      iterations: 100
+    }
+  );
+}
+
+//pink butterfly 
+
+for (var j = 0; j < pinkButterflyCount; j++) {
+  var yposPink = Math.round(Math.random() * height);
+
+  var createButterflyPink = document.createElement("div");
+  createButterflyPink.innerHTML = pinkButterfly.outerHTML;
+
+  var speedPink = 1000 * (Math.random() * maxTimePink + 1);
+  createButterflyPink.setAttribute("class", "createbutterflyPink" + (3 - Math.floor(speedPink / 1000 / 8)));
+
+  var speedDelayPink = 20000;
+
+  butterflies.appendChild(createButterflyPink);
+  createButterflyPink.animate(
+    [
+      {
+        transform: "translate3d(" + width + "vw, " + yposPink + "vh, 0)"
+      },
+      {
+        transform:
+          "translate3d(-" + Math.random() * 256 + "vw, " + initialTop + "vh, 0)"
+      }
+    ],
+    {
+      delay: Math.random() * -speedPink,
+      duration: speedDelayPink,
+      iterations: 100
+    }
+  );
+}
+
+  </script>
+  </body>
+  </html>
