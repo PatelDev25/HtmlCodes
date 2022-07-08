@@ -1,0 +1,155 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title>Form</title>
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" />
+    <link rel="stylesheet" type="text/css" href="C:\Users\Student\Desktop\Dk\Day9\Style.css" />
+    <link rel="stylesheet" type="text/css" href="Style.css">
+
+    <link rel="stylesheet" type="text/css" href="C:\Users\Student\Desktop\Dk\Bootstrap\css\bootstrap\bootstrap.css" />
+    <style>
+
+        .tracking-in-expand {
+            -webkit-animation: tracking-in-expand 3s cubic-bezier(.215,.61,.355,1.000) .2s infinite both;
+            animation: tracking-in-expand 3s cubic-bezier(.215,.61,.355,1.000) .2s infinite both
+        }
+        .scale-in-ver-top {
+            -webkit-animation: scale-in-ver-top 4s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+            animation: scale-in-ver-top 4s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+        }
+        @-webkit-keyframes scale-in-ver-top {
+            0% {
+                -webkit-transform: scaleY(0);
+                transform: scaleY(0);
+                -webkit-transform-origin: 100% 0%;
+                transform-origin: 100% 0%;
+                opacity: 1;
+            }
+
+            100% {
+                -webkit-transform: scaleY(1);
+                transform: scaleY(1);
+                -webkit-transform-origin: 100% 0%;
+                transform-origin: 100% 0%;
+                opacity: 1;
+            }
+        }
+
+        @keyframes scale-in-ver-top {
+            0% {
+                -webkit-transform: scaleY(0);
+                transform: scaleY(0);
+                -webkit-transform-origin: 100% 0%;
+                transform-origin: 100% 0%;
+                opacity: 1;
+            }
+
+            100% {
+                -webkit-transform: scaleY(1);
+                transform: scaleY(1);
+                -webkit-transform-origin: 100% 0%;
+                transform-origin: 100% 0%;
+                opacity: 1;
+            }
+        }
+
+        @-webkit-keyframes tracking-in-expand {
+            0% {
+                letter-spacing: -.5em;
+                opacity: 0
+            }
+
+            40% {
+                opacity: .6
+            }
+
+            100% {
+                opacity: 1
+            }
+        }
+
+        @keyframes tracking-in-expand {
+            0% {
+                letter-spacing: -.5em;
+                opacity: 0
+            }
+
+            40% {
+                opacity: .6
+            }
+
+            100% {
+                opacity: 1
+            }
+        }
+    </style>
+</head>
+<body>
+    
+
+
+    <form style="text-align:center;" class="scale-in-ver-top">
+        <div class="container1  ">
+            <div1>
+                <div>
+                    <h2 class="tracking-in-expand"> <i class="fa-solid fa-house-user"></i>&nbsp; Creat An Account </h2>
+                </div><hr style="height:3px; background-color:#000; border:none;">
+                <div>
+
+                    <h4>FirstName :</h4>
+                    <i class="fa-solid fa-a border"></i>  <input type="text" />
+                </div>
+                <div>
+                    <h4>LastName :</h4>
+                    <i class="fa-solid fa-a border"></i> <input type="text" />
+                </div>
+                <div>
+
+                    <h4>Contact No :</h4>
+                    <i class="fa-solid fa-phone border "></i>  <input type="number" maxlength="10" />
+                </div>
+                <div>
+
+                    <h4>Gendr :</h4>
+                    <div class="form-check">
+                        <i class="fa-solid fa-person"></i>&nbsp;
+                        <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+                        <label class="form-check-label" for="flexRadioDefault1">
+                            Male
+                        </label>
+                        &nbsp;&nbsp;&nbsp;    <i class="fa-solid fa-person-dress"></i>&nbsp;
+                        <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2">
+                        <label class="form-check-label" for="flexRadioDefault2">
+                            Female
+                        </label>
+                    </div>
+                    
+                </div>
+                <div>
+                    <h4>Email Id :</h4>
+                    <i class="fa-solid fa-envelope"></i>
+                    <input type="email" />
+                </div>
+                <div>
+                    <h4>Password :</h4>
+                    <i class="fa-solid fa-key"></i>
+                    <input type="password" />
+                </div>
+                <hr style="height:3px; background-color:#000; border:none;">
+                <div class="row " style="padding:20px;">
+                    <div class="col-md-6 p-2" >
+                        <button class="btn " type="submit">Create</button>
+                        <button class="btn " type="submit">Already</button>
+                    </div>
+                </div>
+            
+            </div1>
+
+        </div>
+    </form>
+        
+      
+</body>
+</html>
